@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-radius: 12px; overflow: hidden;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Radial Glow Behind Title -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#090d16" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#818cf8" />
+      <stop offset="70%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <!-- Pill Gradient 1 -->
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Pill Gradient 2 -->
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7e22ce" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Pill Gradient 3 -->
+    <linearGradient id="pillGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#be185d" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    /* Continuous Dynamic Physics Wave & Floating Keyframe Spheres */
+    @keyframes floatOrb1 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(35px, -25px) scale(1.12); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes floatOrb2 {
+      0% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-30px, 20px) scale(0.92); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.28; }
+      50% { opacity: 0.55; }
+    }
+    @keyframes waveMotion {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(-40px); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes springBounce {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+
+    .orb-1 { animation: floatOrb1 9s ease-in-out infinite; }
+    .orb-2 { animation: floatOrb2 11s ease-in-out infinite; }
+    .glow-bg { animation: pulseGlow 6s ease-in-out infinite; }
+    .wave-line { animation: waveMotion 12s ease-in-out infinite alternate; }
+    .pill-anim1 { animation: springBounce 4.5s ease-in-out infinite; }
+    .pill-anim2 { animation: springBounce 5.2s ease-in-out infinite 0.7s; }
+    .pill-anim3 { animation: springBounce 4.8s ease-in-out infinite 1.4s; }
+  </style>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="360" fill="url(#bgGlow)"/>
+
+  <!-- Subtle Animated Grid Lines -->
+  <g stroke="#334155" stroke-opacity="0.18" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Ambient Light Orbs -->
+  <ellipse class="glow-bg" cx="600" cy="180" rx="420" ry="160" fill="url(#centerGlow)"/>
+  <circle class="orb-1" cx="210" cy="90" r="110" fill="#3b82f6" opacity="0.12" filter="blur(30px)"/>
+  <circle class="orb-2" cx="990" cy="270" r="130" fill="#ec4899" opacity="0.12" filter="blur(35px)"/>
+
+  <!-- Dynamic Motion Curve Lines (Background Motion Physics) -->
+  <g class="wave-line" opacity="0.45">
+    <path d="M-50,290 C220,170 380,330 620,240 C860,150 1020,310 1250,220" fill="none" stroke="url(#titleGrad)" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <path d="M-50,260 C260,340 420,180 660,280 C900,370 1060,190 1250,270" fill="none" stroke="#6366f1" stroke-width="1.8" opacity="0.6"/>
+  </g>
+
+  <!-- Animated Keyframe Badges / Pills (Dynamic UI Transitions Theme) -->
+  <g class="pill-anim1">
+    <rect x="85" y="45" width="225" height="34" rx="17" fill="url(#pillGrad1)" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.2"/>
+    <circle cx="102" cy="62" r="5" fill="#38bdf8"/>
+    <text x="117" y="68" fill="#bae6fd" font-size="12" font-weight="600" letter-spacing="0.5">✦ AI-PROMPTED MOTION</text>
+  </g>
+
+  <g class="pill-anim2">
+    <rect x="895" y="48" width="210" height="34" rx="17" fill="url(#pillGrad2)" stroke="#c084fc" stroke-opacity="0.35" stroke-width="1.2"/>
+    <circle cx="912" cy="65" r="5" fill="#c084fc"/>
+    <text x="927" y="71" fill="#f3e8ff" font-size="12" font-weight="600" letter-spacing="0.5">⚙️ RIVE &amp; LOTTIE ENGINE</text>
+  </g>
+
+  <g class="pill-anim3">
+    <rect x="470" y="292" width="260" height="34" rx="17" fill="url(#pillGrad3)" stroke="#f472b6" stroke-opacity="0.35" stroke-width="1.2"/>
+    <circle cx="488" cy="309" r="5" fill="#f472b6"/>
+    <text x="502" y="315" fill="#fce7f3" font-size="12" font-weight="600" letter-spacing="0.5">🚀 SPRING PHYSICS &amp; TIMELINES</text>
+  </g>
+
+  <!-- Foreground Title and Subtitles (Ensured on top, crisp and unobstructed) -->
+  <g filter="url(#shadow)" text-anchor="middle">
+    <!-- Category Pill -->
+    <rect x="505" y="96" width="190" height="26" rx="13" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" opacity="0.95"/>
+    <text x="600" y="113" fill="#a5b4fc" font-size="11" font-weight="700" letter-spacing="1.2">CURATED ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="172" fill="url(#titleGrad)" font-size="40" font-weight="800" letter-spacing="-0.5">
+      Awesome Motion Graphics &amp; UI Transitions
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="215" fill="#e2e8f0" font-size="16" font-weight="500" letter-spacing="0.3">
+      Prompt-Driven UI Motion • Vector State Machines • WebGL &amp; Spring Physics Engines
+    </text>
+
+    <!-- Secondary Meta Description -->
+    <text x="600" y="248" fill="#94a3b8" font-size="13" font-weight="400">
+      SaaS Cloud Suites, Open-Source JavaScript Runtimes &amp; AI Micro-Interaction Frameworks
+    </text>
+  </g>
+</svg>
