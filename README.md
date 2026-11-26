@@ -56,9 +56,9 @@ The sector exhibits **moderate fragmentation with specialized sub-category conso
 
 ## 📦 Open-Source GitHub Projects
 
-Curated open-source animation runtimes, AI motion skills, and programmatic video frameworks sorted descending by GitHub community star count:
+Curated open-source animation runtimes, AI motion skills, and programmatic video frameworks sorted descending by GitHub community Stars_Count:
 
-| Repository & Framework | Star Badge | Description |
+| Repository & Framework | Stars_Badge | Description |
 | :--- | :---: | :--- |
 | **[Three.js](https://github.com/mrdoob/three.js)** | [![Three.js Stars](https://img.shields.io/github/stars/mrdoob/three.js?style=social&color=white)](https://github.com/mrdoob/three.js/stargazers) | Premier open-source JavaScript 3D library and WebGL engine powering immersive 3D scene transitions and GPU shaders. |
 | **[Manim](https://github.com/3b1b/manim)** | [![Manim Stars](https://img.shields.io/github/stars/3b1b/manim?style=social&color=white)](https://github.com/3b1b/manim/stargazers) | Programmatic animation engine for explanatory mathematical videos and precision vector graphics in Python (by 3Blue1Brown). |
@@ -103,7 +103,7 @@ We welcome contributions from designers, creative technologists, and developers 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/awesome-motion-tool`).
 3. ✏️ **Add your entry** under the appropriate SaaS or Open-Source section following existing table conventions.
-4. 🔗 **Ensure accurate links, pricing, free tier details, and GitHub star badges.**
+4. 🔗 **Ensure accurate links, pricing, free tier details, and GitHub Stars_Badges.**
 5. 🚀 **Submit a Pull Request** with a concise description of your changes.
 
 ---
