@@ -103,7 +103,7 @@ We welcome contributions from designers, creative technologists, and developers 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a new branch** (`git checkout -b feature/awesome-motion-tool`).
 3. ✏️ **Add your entry** under the appropriate SaaS or Open-Source section following existing table conventions.
-4. 🔗 **Ensure accurate links, pricing, free tier details, and GitHub Stars_Badges.**
+4. 🔗 **Ensure accurate links, pricing, free tier details, and GitHub_Stars_Badges.**
 5. 🚀 **Submit a Pull Request** with a concise description of your changes.
 
 ---
